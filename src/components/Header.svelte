@@ -47,9 +47,10 @@
 >
   <div class="h-full px-4 lg:pl-7 flex items-center justify-between">
     <a href="/" class="flex items-center gap-2">
-      <img src="/logo.svg" alt="Logo" class="h-8 w-8" />
+      <img src="/logo.png" alt="Logo" class="h-12 w-12" />
       <div class="flex items-center gap-2">
-        <span class="text-[#19191C] dark:text-white font-medium">Acme Inc.</span
+        <span class="text-[#19191C] dark:text-white font-medium"
+          >HMJ TI Undiksha</span
         >
         <span class="text-gray-400 hidden sm:inline">Documentation</span>
       </div>

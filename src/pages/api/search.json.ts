@@ -5,9 +5,9 @@ export const GET: APIRoute = async () => {
   const docs = await getCollection('docs')
 
   const searchIndex = await Promise.all(
-    docs.map(async (entry: CollectionEntry<'docs'>) => {
+    docs.map(async (entry: any) => {
       // Get rendered content
-      const { remarkPluginFrontmatter } = await entry.render()
+      const { remarkPluginFrontmatter } = await entry.render();
 
       return {
         title: entry.data.title,
@@ -18,9 +18,9 @@ export const GET: APIRoute = async () => {
         // Add headings from remarkPluginFrontmatter for better search
         headings:
           remarkPluginFrontmatter.headings?.map((h: any) => h.text) || [],
-      }
-    }),
-  )
+      };
+    })
+  );
 
   return new Response(JSON.stringify(searchIndex), {
     headers: {
