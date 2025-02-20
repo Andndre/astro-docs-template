@@ -1,18 +1,16 @@
-import { defineConfig } from 'astro/config'
-import svelte from '@astrojs/svelte'
-import tailwind from '@astrojs/tailwind'
-import mdx from '@astrojs/mdx'
-import node from '@astrojs/node'
+import { defineConfig } from "astro/config";
+import svelte from "@astrojs/svelte";
+import tailwind from "@astrojs/tailwind";
+import mdx from "@astrojs/mdx";
+import vercelServerless from "@astrojs/vercel/serverless";
 
 export default defineConfig({
-  output: 'server',
-  adapter: node({
-    mode: 'standalone',
-  }),
+  output: "server",
+  adapter: vercelServerless(),
   markdown: {
-    syntaxHighlight: 'prism',
+    syntaxHighlight: "prism",
     prism: {
-      languages: ['typescript', 'javascript', 'css', 'markup', 'bash', 'jsx'],
+      languages: ["typescript", "javascript", "css", "markup", "bash", "jsx"],
     },
   },
   integrations: [
@@ -25,11 +23,11 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@': '/src',
-        '@components': '/src/components',
-        '@layouts': '/src/layouts',
-        '@styles': '/src/styles',
+        "@": "/src",
+        "@components": "/src/components",
+        "@layouts": "/src/layouts",
+        "@styles": "/src/styles",
       },
     },
   },
-})
+});
