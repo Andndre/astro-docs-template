@@ -19,10 +19,10 @@ A sleek and modern documentation site template built with Astro, Svelte, and Tai
 
 ```bash
 # Clone the repository
-git clone https://github.com/ebenezerdon/docs-template.git
+git clone https://github.com/Andndre/docs-hmjti.git
 
 # Navigate to the project
-cd docs-template
+cd docs-hmjti
 
 # Install dependencies
 npm install
@@ -75,10 +75,10 @@ The sidebar navigation is automatically generated from your content structure. T
 
 ```typescript
 // Define groups in desired order
-const groups = ['Overview', 'Foundations', 'Components'] as const
+const groups = ["Overview", "Foundations", "Components"] as const;
 
 const docs = defineCollection({
-  type: 'content',
+  type: "content",
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -86,7 +86,7 @@ const docs = defineCollection({
     order: z.number().optional(),
     priority: z.number().optional(),
   }),
-})
+});
 ```
 
 Each MDX file can include these frontmatter fields:
