@@ -1,111 +1,56 @@
 ---
-title: Modern documentation template
+title: Dokumentasi Website HMJ TI Undiksha
 group: Overview
-description: A sleek and modern documentation site template built with Astro, Svelte, and Tailwind CSS.
+description: Sebuah dokumentasi yang dikembangkan untuk memberikan informasi terkait dengan cara penggunaan, cara pengembangan, dan cara pemeliharaan website HMJ Teknik Informatika.
 ---
 
-import { Card, CardGrid } from '@components/mdx'
+import { Card, CardGrid } from "@components/mdx";
 
-<div class="hero">
-  <div class="hero-content">
-    <p class="text-xl text-[#666687] dark:text-gray-400 max-w-2xl">
-      A sleek and modern documentation site template built with Astro, Svelte,
-      and Tailwind CSS. Features a clean design, full-text search, dark mode
-      support, and responsive layout.
-    </p>
-  </div>
-</div>
+Sebuah dokumentasi yang dikembangkan untuk memberikan informasi terkait dengan cara penggunaan, cara pengembangan, dan cara pemeliharaan website HMJ Teknik Informatika
 
-## Get started
+## Memulai
 
 <CardGrid>
-  <Card title="Quick start" icon="download" gradient="blue">
-    Clone the repository, install dependencies, and start the development
-    server. Get up and running in minutes.
+  <Card title="Mengubah dokumentasi ini" icon="download" gradient="blue">
+    Clone repository ini untuk mengubah isi dari dokumentasi ini, kemudian
+    lakukan pull request [disini 👈](https://github.com/Andndre/docs-hmjti)
   </Card>
-  <Card title="Project structure" icon="blocks" gradient="purple">
-    Well-organized project structure with dedicated directories for content,
-    components, layouts, and styles.
+  <Card title="Dikembangkan Menggunakan Astro" icon="blocks" gradient="purple">
+    Dokumentasi ini dikembangkan menggunakan Astro, dengan template yang
+    disediakan [disini 👈](https://github.com/ebenezerdon/astro-docs-template)
   </Card>
-  <Card title="Adding content" icon="sparkles" gradient="orange">
-    Write your documentation in MDX format with full component support. Organize
-    content with groups and priority-based ordering.
+  <Card title="Dilengkapi dengan pencarian" icon="sparkles" gradient="orange">
+    Dokumentasi ini dilengkapi dengan full-text search yang bisa digunakan untuk
+    mencari konten di dalam dokumentasi ini
   </Card>
-  <Card title="Customization" icon="brush" gradient="green">
-    Easily customize colors, typography, and components. Built with Tailwind CSS
-    for flexible styling and Svelte for interactive components.
+  <Card title="Fitur berguna lainnya" icon="brush" gradient="green">
+    Dokumentasi ini secara out of the box dilengkapi dengan daftar isi, sidebar,
+    dan toggle mode
   </Card>
 </CardGrid>
 
-## Key features
+## Fitur Utama
 
-- **Built with Astro**: Fast, modern static site generation
-- **Svelte components**: Interactive UI components with great DX
-- **Tailwind CSS**: Utility-first CSS framework
-- **MDX support**: Write content in MDX with component support
-- **Full-text search**: Fast client-side search with Fuse.js
-- **Dark mode**: Elegant light and dark theme support
-- **Responsive design**: Mobile-first, adaptive layout
-- **Auto-generated navigation**: Sidebar structure from content
-- **Priority-based ordering**: Fine-grained control over navigation order
+- **Dibangun dengan Astro**: Generasi situs web statis yang cepat dan modern
+- **Komponen Svelte**: Komponen UI interaktif dengan pengalaman pengembang yang baik
+- **Tailwind CSS**: Kerangka kerja CSS berbasis utility
+- **Dukungan MDX**: Tulis konten dalam MDX dengan dukungan komponen
+- **Pencarian teks lengkap**: Pencarian sisi klien yang cepat dengan Fuse.js
+- **Mode gelap**: Dukungan tema terang dan gelap yang elegan
+- **Desain responsif**: Tata letak yang adaptif dan mobile-first
+- **Navigasi yang dihasilkan secara otomatis**: Struktur sidebar yang dibuat dari konten
+- **Pengurutan berdasarkan prioritas**: Kontrol yang lebih baik atas urutan navigasi
 
 ## Ready to start?
 
-<div class="cta-grid">
-  <a href="/getting-started" class="cta-card primary">
-    <h3>Quick start guide →</h3>
-    <p>Get your documentation site running in minutes</p>
-  </a>
-  <a href="/foundations/colors" class="cta-card secondary">
-    <h3>Demo content →</h3>
-    <p>See the colors page</p>
-  </a>
-  <a href="/components/button" class="cta-card secondary">
-    <h3>Demo component →</h3>
-    <p>See the button component in action</p>
-  </a>
-</div>
+### [Quick start guide](/getting-started)
 
-<style>
-  {`
-.hero {
-  @apply -mx-4 sm:-mx-8 -mt-6 mb-12 py-12 px-4 sm:px-8 bg-gradient-to-br from-purple-500/5 to-pink-500/5 dark:from-purple-500/10 dark:to-pink-500/10 border-b border-[#DCDCE4] dark:border-gray-800;
-}
+Get your documentation site running in minutes
 
-.hero-content {
-  @apply max-w-4xl mx-auto text-center;
-}
+### [Demo content](/foundations/colors)
 
-.cta-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8;
-}
+See the colors page
 
-.cta-card {
-  @apply block p-6 rounded-lg border border-[#DCDCE4] dark:border-gray-800 transition-all duration-300 hover:scale-[1.02] no-underline;
-}
+### [Demo component](/components/button)
 
-.cta-card.primary {
-  @apply bg-gradient-to-br from-purple-500 to-pink-500 border-0;
-}
-
-.cta-card.primary h3 {
-  @apply text-white font-medium mb-1;
-}
-
-.cta-card.primary p {
-  @apply text-white/90 text-sm;
-}
-
-.cta-card.secondary {
-  @apply bg-white dark:bg-gray-900/50;
-}
-
-.cta-card.secondary h3 {
-  @apply text-[#19191C] dark:text-white font-medium mb-1;
-}
-
-.cta-card.secondary p {
-  @apply text-[#666687] dark:text-gray-400 text-sm;
-}
-`}
-</style>
+See the button component in action
